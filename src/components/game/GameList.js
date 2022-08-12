@@ -15,7 +15,7 @@ export const GameList = (props) => {
     return (
         <>
         <header>Game List</header>
-        <button onClick={(() => navigate(`create`))}>Create New Game</button>
+        <button onClick={(() => navigate(`/game/create`))}>Register New Game</button>
         <article className="games">
             {
             games.map(game => {

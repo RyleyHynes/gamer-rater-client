@@ -18,3 +18,13 @@ export const getSingleGame = (gameId) => {
         .then(response => response.json())
 }
 
+export const CreateGame = (game) => {
+    return fetch(`http://localhost:8000/games`, {
+        method: "POST",
+        headers: {
+            "Authorization": `Token ${localStorage.getItem("gr_token")}`
+        },
+        body: JSON.stringify(game)
+    })
+    .then(response => response.json())
+}
