@@ -17,7 +17,7 @@ export const GameForm = () => {
         description: "",
         numberOfPlayers: 0,
         estimatedTimeToPlay: 0,
-        recommendedAge: 0,
+        ageRecommendation: 0,
         yearReleased: 0,
         category: 0
     })
