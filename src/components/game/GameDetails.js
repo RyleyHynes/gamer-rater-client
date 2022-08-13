@@ -42,6 +42,8 @@ export const GameDetails = () => {
         }
         </div>
         <button onClick={(() => navigate(`/games/${gameId}/review`))}>Review Game</button>
+        <button onClick={(() => navigate(`/games/${gameId}/edit`))}>Edit Game</button>
+        
         </>
     )
 }
